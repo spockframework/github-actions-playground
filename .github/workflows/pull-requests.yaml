@@ -1,0 +1,13 @@
+name: Pull Request Checks
+
+on:
+  pull_request:
+
+jobs:
+  pr-checks:
+    name: Check PR
+    runs-on: ubuntu-latest
+    steps:
+    - name: Sleep for 30 seconds
+      run: sleep 30s
+      shell: bash
